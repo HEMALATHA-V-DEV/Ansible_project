@@ -1,0 +1,8 @@
+- name: Date and Uptime Playbook
+  hosts: servers  # Specify the group of servers to run the tasks on
+  tasks:
+    - name: Show current date
+      command: date
+
+    - name: Show system uptime
+      command: uptime
